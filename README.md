@@ -1,4 +1,2 @@
-# what
-# why
-# how
-# Seven 
+# what why howt
+# 7
