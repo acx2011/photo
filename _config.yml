@@ -1,15 +1,10 @@
 # Site settings
 title: Hower Version
-email: ""
-description: "Photo Journal"
-url: "https://whatwhyhow7.github.io"
-facebook_username: ""
-twitter_username: ""
-instagram_username: ""
-github_username:  ""
-deviantart_username: ""
-flickr_username: ""
-discus_shortname: ""
+description: TALK IS CHEAP, SHOW YOU WHO I AM
+url: https://whatwhyhow7.github.io
+baseurl: /photo
+email: wangwenhao.rar@gmail.com
+github_username:  whatwhyhow7
 share: true
 
 # Owner/author information
@@ -32,9 +27,9 @@ comments :
 
 # Internal nav
 nav:
-  - GALLERY: "https://whatwhyhow7.github.io/photo/gallery/"
-  - JOURNAL: "https://whatwhyhow7.github.io/photo/journal/"
-  - ABOUT: "https://whatwhyhow7.github.io/photo/about/"
+  - GALLERY: "/gallery/"
+  - JOURNAL: "/journal/"
+  - ABOUT: "/about/"
 
 # All translation keys
 translations:
