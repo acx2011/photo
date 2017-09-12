@@ -9,6 +9,12 @@ email: wangwenhao.rar@gmail.com
 github_username:  whatwhyhow7
 share: true
 
+# Internal nav
+nav:
+  - GALLERY: "gallery"
+  - JOURNAL: "journal"
+  - ABOUT: "about"
+
 # Owner/author information
 owner:
   name:   photorama
@@ -26,12 +32,6 @@ comments:
   provider: disqus
   disqus:
     short_name: ""
-
-# Internal nav
-nav:
-  - GALLERY: "gallery"
-  - JOURNAL: "journal"
-  - ABOUT: "about"
 
 # All translation keys
 translations:
