@@ -3,7 +3,6 @@ title: Hower Version
 email: ""
 description: "Photo Journal"
 url: "https://whatwhyhow7.github.io"
-# baseurl: "/photorama"
 facebook_username: ""
 twitter_username: ""
 instagram_username: ""
@@ -33,19 +32,14 @@ comments :
 
 # Internal nav
 nav:
-  - GALLERY: "https://sunbliss.github.io/photorama/gallery/"  
-  - JOURNAL: "https://sunbliss.github.io/photorama/journal/"
-  - ABOUT: "https://sunbliss.github.io/photorama/about/"
+  - GALLERY: "https://whatwhyhow7.github.io/photo/gallery/"
+  - JOURNAL: "https://whatwhyhow7.github.io/photo/journal/"
+  - ABOUT: "https://whatwhyhow7.github.io/photo/about/"
 
 # All translation keys
 translations:
  # 404.html
   permalink: "/404.html"
-
-# Server
-destination:      	 ./_site
-port:             	 4000
-
 
 # Build settings
 markdown: kramdown
