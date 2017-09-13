@@ -2,15 +2,15 @@
 layout: home
 images:
  - image_path: /img/slider/home01.webp
-   gallery-folder: /img/slider/
  - image_path: /img/slider/home02.webp
-   gallery-folder: /img/slider/
  - image_path: /img/slider/home03.webp
-   gallery-folder: /img/slider/
  - image_path: /img/slider/home04.webp
-   gallery-folder: /img/slider/
  - image_path: /img/slider/home05.webp
-   gallery-folder: /img/slider/
+ - image_path: /img/slider/home06.webp
+ - image_path: /img/slider/home07.webp
+ - image_path: /img/slider/home08.webp
+ - image_path: /img/slider/home09.webp
+ - image_path: /img/slider/home10.webp
 ---
 
 <html class="no-js" lang="en">
@@ -26,12 +26,11 @@ images:
 <body class="fullscreen">
     <section id="content" role="main">
 		<div class="wrapper">
-		    <div class="position-absolute">
-				<!--<h2 class="big no-margin"><strong>{{ page.main-title }}</strong></h2>-->
-				<h2>那些年，到过的远方和田野</h2>
-                <h2>写过的几首小诗</h2>
-                <h2>拍过的人们，还有故事</h2>
-                <!--<div class="entry-summary"><p>{{ page.description }}</p></div>-->
+		    <div class="position-absolute" style="font-size:0.9em;padding-left:2em">
+				<h2 class="big no-margin"><strong>Hower</strong></h2>
+				<h3><strong>那些年，到过的远方和田野</strong></h3>
+                <h3><strong>写过的几首小诗</strong></h3>
+                <h3><strong>拍过的人们，还有故事</strong></h3>
                 <br/>
 			</div>
 			<div class="gallery fullscreen-gallery kenburns-gallery">
@@ -39,9 +38,7 @@ images:
                 {% for image in page.images %}
                     <figure class="gallery-item">
                         <header class='gallery-icon'>
-                            <a href="{{ site.url }}{{ site.baseurl }}{{ image.gallery-folder }}">
-                                <img src="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}">
-                            </a>
+                            <a href="javascript:void(0)"><img src="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}"/></a>
                         </header>
                     </figure>
                 {% endfor %}

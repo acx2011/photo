@@ -1,17 +1,17 @@
 <nav class="navbar navbar-default navbar-custom navbar-fixed-top" style="margin-right:1em; z-index: 1;">
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header page-scroll">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" style="margin-top:23px;margin-right:17px;">
+        <div class="navbar-header page-scroll" style="">
+            <a href="{{ site.baseurl }}/">
+                <img src="{{ site.baseurl }}/logo.png" style="cursor:pointer;width:70%;margin-left:1em;margin-top:1.7em"/>
+            </a>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" style="margin-top:7%;margin-right:1em;">
                 <i class="fa fa-bars fa-lg"></i>
             </button>
-            <a href="{{ site.baseurl }}/">
-                <img src="{{ site.baseurl }}/logo.png" style="width:70%;cursor:pointer;margin-top:25px;margin-left:15px"/>
-            </a>
         </div>
 
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right" style="margin-top:30px;margin-right:20px;">
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="padding:0">
+            <ul class="nav navbar-nav navbar-right" style="margin-right:1em;">
                 {% for nav_hash in site.nav %}
                     {% for nav_item in nav_hash %}
                         {% assign lowercase_nav_item = nav_item[0] | downcase %}
