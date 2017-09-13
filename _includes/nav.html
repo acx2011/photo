@@ -16,7 +16,7 @@
                     {% for nav_item in nav_hash %}
                         {% assign lowercase_nav_item = nav_item[0] | downcase %}
                         {% if page.active == lowercase_nav_item %}
-                            <li class="active"><a href="{{ nav_item[1] }}">{{ nav_item[0] }}</a></li>
+                            <li class="active"><a href="{{ site.baseurl }}/{{ nav_item[1] }}">{{ nav_item[0] }}</a></li>
                         {% else %}
                             <li><a href="{{ nav_item[1] }}">{{ nav_item[0] }}</a></li>
                         {% endif %}

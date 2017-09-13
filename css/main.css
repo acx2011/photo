@@ -2,7 +2,7 @@ body {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 20px;
   color: #eee;
-  background-color: #000;
+  background-color: #1a222c;
 }
 p {
   line-height: 1.5;
@@ -11,26 +11,19 @@ p {
 p a {
   text-decoration: none;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 800;
 }
 a {
-  color: #760824;
   transition: color .4s;
   text-decorarion: none;
 }
-a:hover,
-a:focus {
+a:hover, a:focus {
   color: #fff;
-     transition: color .3s;
-    outline: none;
-    text-shadow:none;
+  transition: color .3s;
+  outline: none;
+  text-shadow:none;
 }
 a img:hover,
 a img:focus {
