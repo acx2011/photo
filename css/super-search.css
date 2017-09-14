@@ -8,14 +8,14 @@ MIT Licensed
     text-shadow: 2px 2px #000;
 }
 .super-search-btn:hover {
-	color: #6ec54d;
+	color: #0085a1;
     transition: color .3s;
     text-shadow: none;
 }
 
 .super-search {
 	position: fixed;
-	background-color: rgba(0, 0, 0, 0.95);
+	background-color: rgba(0, 0, 0, 0.77);
 	left: 0;
 	right: 0;
 	top: 0;
@@ -30,7 +30,7 @@ MIT Licensed
      transition: color .4s;
 	position: absolute;
 	right: 10px;
-	top: 15px;
+	top: 60px;
 	z-index: 1;
 }
 .super-search__close-btn:hover {
@@ -39,17 +39,19 @@ MIT Licensed
 }
 .super-search__input {
 	border: 0;
-	font-size: 50px;
+	border-bottom: 1px solid #fff;
+	font-size: 30px;
 	border-left: none;
 	border-right: none;
 	color: #f9f9f9;
-    background-color: #000;
+	background-color: rgba(0, 0, 0, 0.07);
 	width: 100%;
     outline: 0;
 	padding: 10px 31px;
 	text-align: center;
 	transform: translateY(-100%);
 	transition: 0.15s ease-out 150ms;
+	margin-top: 40px;
 }
 .is-active .super-search__input {
 	transform: translateY(0);
@@ -94,17 +96,17 @@ MIT Licensed
 }
 
 .super-search__input::-webkit-input-placeholder {
-   color: rgba(138, 17, 17, .45);
+   color: #BBBBBB;
 }
 
 .super-search__input:-moz-placeholder { /* Firefox 18- */
-   color: rgba(138, 17, 17, .45);  
+   color: #BBBBBB;
 }
 
 .super-search__input::-moz-placeholder {  /* Firefox 19+ */
-   color: rgba(138, 17, 17, .45);  
+   color: #BBBBBB;
 }
 
 .super-search__input:-ms-input-placeholder {  
-   color: rgba(138, 17, 17, .45);  
+   color: #BBBBBB;
 }
