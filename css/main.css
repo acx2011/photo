@@ -20,7 +20,7 @@ a {
   text-decorarion: none;
 }
 a:hover, a:focus {
-  color: #fff;
+  color: #0085a1;
   transition: color .3s;
   outline: none;
   text-shadow:none;
@@ -132,7 +132,7 @@ hr.small {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 .intro-header .site-heading,
 .intro-header .post-heading,
@@ -261,7 +261,7 @@ hr.small {
   border-bottom-left-radius: 5px;
 }
 footer {
-  margin: -30px 0 0px;
+  margin: -30px 0 70px;
 }
 footer .list-inline {
   margin: 0;

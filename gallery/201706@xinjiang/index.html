@@ -1,14 +1,73 @@
 ---
 layout: page
 active: gallery
-title: "2017.06@新疆"
-description: "西北偏北 · 心降新疆"
-header-img: "/gallery/201706@新疆/bg.jpg"
-album-title: "北疆行"
+album: 201706@xinjiang
+head-img: 201706@xinjiang/head-img.jpg
+title: 2017.06@新疆
+description: 西北偏北 · 心降新疆
+album-title: 北疆行
 images:
- - image_path: /gallery/201706@新疆/archive/01.jpg
-   caption: IMAGE TITLE
-   copyright: © Hower
+ - path: archive/00.jpg
+   caption: 禾木
+ - path: archive/01.jpg
+   caption: 禾木
+ - path: archive/02.jpg
+   caption: 禾木
+ - path: archive/03.jpg
+   caption: 禾木
+ - path: archive/04.jpg
+   caption: 禾木
+ - path: archive/05.jpg
+   caption: 禾木
+ - path: archive/06.jpg
+   caption: 禾木
+ - path: archive/07.jpg
+   caption: 禾木
+ - path: archive/08.jpg
+   caption: 禾木
+ - path: archive/09.jpg
+   caption: 禾木
+ - path: archive/10.jpg
+   caption: 禾木
+ - path: archive/11.jpg
+   caption: 禾木
+ - path: archive/12.jpg
+   caption: 禾木
+ - path: archive/13.jpg
+   caption: 禾木
+ - path: archive/14.jpg
+   caption: 禾木
+ - path: archive/15.jpg
+   caption: 禾木
+ - path: archive/16.jpg
+   caption: 禾木
+ - path: archive/17.jpg
+   caption: 禾木
+ - path: archive/18.jpg
+   caption: 禾木
+ - path: archive/19.jpg
+   caption: 禾木
+ - path: archive/20.jpg
+   caption: 禾木
+ - path: archive/21.jpg
+   caption: 禾木
+ - path: archive/22.jpg
+   caption: 禾木
+ - path: archive/23.jpg
+   caption: 禾木
+ - path: archive/24.jpg
+   caption: 禾木
+ - path: archive/25.jpg
+   caption: 禾木
+ - path: archive/26.jpg
+   caption: 禾木
+ - path: archive/27.jpg
+   caption: 禾木
+ - path: archive/28.jpg
+   caption: 禾木
+ - path: archive/29.jpg
+   caption: 禾木
+
 ---
 
 <html class="no-js" lang="en">
@@ -18,21 +77,19 @@ images:
 <body>
 	<section id="content" role="main">
 		<div class="wrapper">
-            <br/>
-            <br/>
-            <h2>{{page.album-title}}</h2>
+            <h2 style="margin:10px 0 30px 0">{{page.album-title}}</h2>
             <div class="gallery masonry-gallery">
                 {% for image in page.images %}
                     <figure class="gallery-item">
                         <header class='gallery-icon'>
-                            <a href="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}" class="popup"  title="{{ image.caption }}" data-caption="{{ image.copyright }}">
-                                <img src="{{ site.url }}{{ site.baseurl }}{{ image.image_path }}">
+                            <a href="{{ site.baseurl }}/{{ page.active }}/{{ page.album }}/{{ image.path }}" class="popup"  title="{{ image.caption }}" data-caption="{{ image.copyright }}">
+                                <img src="{{ site.baseurl }}/{{ page.active }}/{{ page.album }}/{{ image.path }}">
                             </a>
                         </header>
                         <figcaption class='gallery-caption'>
                             <div class="entry-summary" id="{{ image.caption }}">
-                                <h3>{{image.caption}}</h3>
-                                <p>{{image.copyright}}</p>
+                                <h2>{{ image.caption }}</h2>
+                                <p>© Hower</p>
                             </div>
                         </figcaption>
                     </figure>

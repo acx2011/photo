@@ -1,12 +1,12 @@
 ---
 layout: page
 active: gallery
-title: "到过的远方"
-description: "诗和远方"
-head-img: "/gallery/head-img.jpg"
+title: 远方
+description: 诗和远方
+head-img: head-img.jpg
 galleries:
- - folder: /gallery/201706@xinjiang/
-   cover: /gallery/201706@xinjiang/cover.jpg
+ - folder: 201706@xinjiang
+   cover: cover.jpg
    name: 新疆
    date: June 2017
 ---
@@ -20,20 +20,20 @@ galleries:
 <body class="gallery">
     <section id="content" role="main">
 		<div class="wrapper">
-			<h2 style="margin-bottom:20px;">{{page.title}}</h2>
+			<h2 style="margin:0 0 30px 0;">到过的{{page.title}}</h2>
 			<div class="gallery masonry-gallery">
                 {% for gallery in page.galleries %}
                     <figure class="gallery-item">
                         <figure class="effect-selena">
 					        <header class='gallery-icon'>
-                                <a href="{{ site.url }}{{ site.baseurl }}{{ gallery.folder }}">
-                                    <img src="{{ site.url }}{{ site.baseurl }}{{ gallery.cover }}">
+                                <a href="{{ site.baseurl }}/{{ page.active }}/{{ gallery.folder }}">
+                                    <img src="{{ site.baseurl }}/{{ page.active }}/{{ gallery.folder }}/{{ gallery.cover }}">
                                 </a>
 					        </header>
 					        <figcaption class='gallery-caption'>
                                 <div class="entry-summary">
-                                    <h3>{{gallery.name}}</h3>
-                                    <p>{{gallery.date}}</p>
+                                    <h2>{{ gallery.name }}</h2>
+                                    <p>{{ gallery.date }}</p>
                                 </div>
 					        </figcaption>
                        </figure>
