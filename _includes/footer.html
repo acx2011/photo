@@ -5,32 +5,57 @@
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <ul class="list-inline text-center">
                     <li>
-                        <a href="https://github.com/{{ site.username }}" data-toggle="tooltip" target="_blank">
+                        <a href="https://github.com/{{ site.username }}" target="_blank" data-toggle="tooltip" title="Github">
                             <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
                                 <i class="fa fa-github fa-stack-1x fa-inverse"></i>
                             </span>
                         </a>
                     </li>
                     <li>
-                        <a href="mailto:{{ site.email }}" data-toggle="tooltip">
+                        <a href="mailto:{{ site.email }}" data-toggle="tooltip" title="Email">
                             <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
                                 <i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i>
                             </span>
                         </a>
                     </li>
                     <li>
-                        <a href="{{ "/feed.xml" | prepend: site.baseurl }}" data-toggle="tooltip" target="_blank">
+                        <a href="{{ "/feed.xml" | prepend: site.baseurl }}" target="_blank" data-toggle="tooltip" title="Feed">
                             <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
                                 <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
                             </span>
                         </a>
                     </li>
+                    <li>
+                        <a href="https://www.instagram.com/photo/" target="_blank" data-toggle="tooltip" title="Instagram">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.flickr.com/photos/" target="_blank" data-toggle="tooltip" title="Flickr">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-flickr fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.deviantart.com/" target="_blank" data-toggle="tooltip" title="Deviantart">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-deviantart fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.mafengwo.cn/" target="_blank" data-toggle="tooltip" title="蚂蜂窝">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-camera-retro fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
                 </ul>
-                <p class="copyright text-muted">Copyright &copy; {{ site.username }} {{ site.time | date: '%Y' }}</p>
-                <center><h5>Build with Jekyll and Powered by ❤ <a href="https://github.com/sunbliss/photorama" target="_blank">Photorama Theme</a></h5></center>
+                <p class="copyright text-muted">Copyright &copy; {{ site.username }} ❤ {{ site.time | date: '%Y' }}</p>
+                <center><h5>Powered by <a href="https://github.com/sunbliss/photorama" target="_blank">Photorama Theme</a></h5></center>
             </div>
         </div>
     </div>
