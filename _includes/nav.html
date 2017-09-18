@@ -1,29 +1,27 @@
-<nav class="navbar navbar-default navbar-custom navbar-fixed-top" style="z-index:1;">
-    <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header" style="margin-top:2%;">
-            <a href="{{ site.baseurl }}/">
-                <img src="{{ site.baseurl }}/logo.png" style="cursor:pointer;width:630px;margin-bottom:20px;margin-right:20px"/>
-            </a>
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" style="margin:4% 0 0 0">
-                <i class="fa fa-bars fa-lg"></i>
-            </button>
-        </div>
-
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="padding:0">
-            <ul class="nav navbar-nav navbar-right" style="margin-top:4%">
-                {% for nav_hash in site.nav %}
-                    {% for nav_item in nav_hash %}
-                        {% assign lowercase_nav_item = nav_item[0] | downcase %}
-                        {% if page.active == lowercase_nav_item %}
-                            <li class="active"><a href="{{ site.baseurl }}/{{ nav_item[1] }}">{{ nav_item[0] }}</a></li>
-                        {% else %}
-                            <li style="text-align:right"><a href="{{ site.baseurl }}/{{ nav_item[1] }}">{{ nav_item[0] }}</a></li>
-                        {% endif %}
-                    {% endfor %}
-                {% endfor %}
-            </ul>
+<div class="site-wrapper">
+    <div class="site-wrapper-inner">
+        <div class="cover-container">
+            <div class="masthead clearfix">
+                <div class="inner" style="font-size:4.2rem">
+                    <h3 class="masthead-brand">
+                        <a href="{{ site.baseurl }}">HOWER VERSION</a>
+                    </h3>
+                    <nav>
+                        <ul class="nav masthead-nav" style="margin-top:7px;">
+                            {% for nav_hash in site.nav %}
+                                {% for nav_item in nav_hash %}
+                                    {% assign lowercase_nav_item = nav_item[0] | downcase %}
+                                    {% if page.active == lowercase_nav_item %}
+                                        <li class="active"><a href="{{ site.baseurl }}/{{ nav_item[1] }}">{{ nav_item[0] }}</a></li>
+                                    {% else %}
+                                        <li><a href="{{ site.baseurl }}/{{ nav_item[1] }}">{{ nav_item[0] }}</a></li>
+                                    {% endif %}
+                                {% endfor %}
+                            {% endfor %}
+                        </ul>
+                    </nav>
+                </div>
+            </div>
         </div>
     </div>
-</nav>
-
+</div>

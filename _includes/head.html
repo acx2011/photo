@@ -2,13 +2,18 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述 3 个 met a标签必须放在最前面，任何其他内容都必须跟随其后！-->
     <meta name="description" content="{{ site.description }}">
+    <meta name="author" content="{{ site.username }}">
     <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
     <title>{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
     <link rel="shortcut icon" type="image/x-icon" href="{{ "/img/icon/favicon.ico" | prepend: site.baseurl }}" >
     <link rel="apple-touch-icon" href="{{ "/img/icon/apple-touch-icon.png" | prepend: site.baseurl }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-    <link rel="stylesheet" type="text/css" href="{{ "/css/bootstrap.min.css" | prepend: site.baseurl }}">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!--<link rel="stylesheet" type="text/css" href="{{ "/css/bootstrap.min.css" | prepend: site.baseurl }}">-->
+    <link rel="stylesheet" type="text/css" href="{{ "/css/cover.css" | prepend: site.baseurl }}">
     <link rel="stylesheet" type="text/css" href="{{ "/css/main.css" | prepend: site.baseurl }}">
     <link rel="stylesheet" type="text/css" href="{{ "/css/galleries.css" | prepend: site.baseurl }}">
     <link rel="stylesheet" type="text/css" href="{{ "/css/super-search.css" | prepend: site.baseurl }}">
@@ -18,10 +23,9 @@
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
