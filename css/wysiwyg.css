@@ -12,7 +12,8 @@ body {
 
 /* CONTENT */
 body #content {
-    position: relative;
+    position: absolute;
+    top: 0;
 }
 
 body #content > .wrapper {
