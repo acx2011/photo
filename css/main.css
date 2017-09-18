@@ -20,7 +20,7 @@ a {
   text-decorarion: none;
 }
 a:hover, a:focus {
-  color: #0085a1;
+  /*color: #0085a1;*/
   transition: color .3s;
   outline: none;
   text-shadow:none;
