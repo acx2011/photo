@@ -80,8 +80,6 @@
 		}
 	}
 
-
-
 	// kenburns on one featured image header image
 	var $kenburns = jQuery('.kenburns-gallery.gallery');
 	if ( $kenburns.length > 0 ) {
@@ -102,9 +100,10 @@
 		});
 	}
 
-	
-	
-	
+    jQuery(window).resize(function() {
+        jQuery('#kenburns').css('width', jQuery(window).width()).css('height', jQuery(window).height());
+	});
+
 	/* ********* WINDOW LOAD ********** */
 	jQuery(window).load(function() {
 	
