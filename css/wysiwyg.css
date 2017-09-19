@@ -53,7 +53,7 @@ body.fullscreen .position-absolute {
     bottom: 0;
     left: 0;
     width: 100%;
-    padding: 0 4.5%;
+    padding: 0 35px;
     /*-webkit-transform: translateY(-50%);
    -moz-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%);*/
     -webkit-transition: -webkit-transform 0.5s;

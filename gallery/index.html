@@ -19,14 +19,14 @@ galleries:
 <body class="gallery">
     <section id="content" role="main">
 		<div class="wrapper">
-			<h2 style="margin:0 0 30px 0;">到过的地方</h2>
+			<h2 style="margin:0 0 30px 20px;text-align:left">到过的地方</h2>
 			<div class="gallery masonry-gallery">
                 {% for gallery in page.galleries %}
                     <figure class="gallery-item">
                         <figure class="effect-selena">
 					        <header class='gallery-icon'>
                                 <a href="{{ site.baseurl }}/{{ page.active }}/{{ gallery.folder }}">
-                                    <img src="{{ site.baseurl }}/{{ page.active }}/{{ gallery.folder }}/{{ gallery.cover }}">
+                                    <img src="{{ site.baseurl }}/{{ page.active }}/{{ gallery.folder }}/{{ gallery.cover }}" style="cursor:pointer">
                                 </a>
 					        </header>
 					        <figcaption class='gallery-caption'>
