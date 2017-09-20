@@ -175,6 +175,17 @@ body {
   .masthead,
   .mastfoot,
   .cover-container {
-    width: 95%;
+    width: 100%;
+  }
+}
+
+@media (min-width: 640px) {
+  .masonry-gallery .gallery-item {
+    margin: 0.35em!important;
+  }
+}
+@media (min-width: 768px) {
+  .masonry-gallery .gallery-item {
+    margin: 0.6em!important;
   }
 }

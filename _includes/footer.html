@@ -4,18 +4,23 @@
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <ul class="list-inline text-center">
                     <li>
+                        <a href="{{ site.url }}" target="_blank" data-toggle="tooltip" title="Homepage">
+                            <span class="fa-stack fa-lg"><i class="fa fa-h-square fa-stack-1x fa-inverse"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ site.url }}/blog" target="_blank" data-toggle="tooltip" title="Blog">
+                            <span class="fa-stack fa-lg"><i class="fa fa-pencil fa-stack-1x fa-inverse"></i></span>
+                        </a>
+                    </li>
+                    <li>
                         <a href="https://github.com/{{ site.username }}" target="_blank" data-toggle="tooltip" title="Github">
                             <span class="fa-stack fa-lg"><i class="fa fa-github fa-stack-1x fa-inverse"></i></span>
                         </a>
                     </li>
                     <li>
                         <a href="mailto:{{ site.email }}" data-toggle="tooltip" title="Email">
-                            <span class="fa-stack fa-lg"><i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i></span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="{{ "/feed.xml" | prepend: site.baseurl }}" target="_blank" data-toggle="tooltip" title="Feed">
-                        <span class="fa-stack fa-lg"><i class="fa fa-rss fa-stack-1x fa-inverse"></i></span>
+                            <span class="fa-stack fa-lg"><i class="fa fa-envelope fa-stack-1x fa-inverse"></i></span>
                         </a>
                     </li>
                     <li>
@@ -35,17 +40,12 @@
                     </li>
                     <li>
                         <a href="http://www.mafengwo.cn/" target="_blank" data-toggle="tooltip" title="蚂蜂窝">
-                            <span class="fa-stack fa-lg"><i class="fa fa-camera-retro fa-stack-1x fa-inverse"></i></span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.deviantart.com/" target="_blank" data-toggle="tooltip" title="Deviantart">
-                            <span class="fa-stack fa-lg"><i class="fa fa-deviantart fa-stack-1x fa-inverse"></i></span>
+                            <span class="fa-stack fa-lg"><i class="fa fa-globe fa-stack-1x fa-inverse"></i></span>
                         </a>
                     </li>
                 </ul>
                 <h5 style="margin-bottom:20px;">Copyright &copy; {{ site.username }} ❤ {{ site.time | date: '%Y' }}</h5>
-                <h5>Powered by <a href="https://github.com/sunbliss/photorama" target="_blank" onmouseover="this.style.cssText='color:grey;'" onmouseout="this.style.cssText='color:white;'">Photorama Theme</a></h5>
+                <h5 style="margin-bottom:13%">Powered by <a href="https://github.com/sunbliss/photorama" target="_blank" onmouseover="this.style.cssText='color:grey;'" onmouseout="this.style.cssText='color:white;'">Photorama Theme</a></h5>
             </div>
         </div>
     </div>
