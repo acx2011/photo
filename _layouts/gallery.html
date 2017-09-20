@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% include head.html %}
+    <head>
+        {% if page.url == "/404.html" %}<meta http-equiv="refresh" content="5; url={{ site.baseurl }}/gallery" />{% endif %}
+    </head>
+    <body>
+        <!-- Nav -->
+        {% include nav.html %}
+        <!-- Header -->
+        <header class="intro-header" style="background-image:url('{{ site.baseurl }}/{{ page.active }}/{{ page.head-img }}')">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                        <div class="site-heading">
+                            <h1 style="font-size:3.7rem">{{ page.title }}</h1>
+                            <hr class="small">
+                            <h3>{{ page.description }}</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Content -->
+        <div class="container">
+            <div class="row">
+                <section id="content" role="main">
+                    <div class="wrapper">
+                        <h2 style="margin:0 0 30px 20px;text-align:left;font-size:2.5rem">{{page.album-title}}</h2>
+                        <div class="gallery masonry-gallery">
+                            {% for image in page.images %}
+                                <figure class="gallery-item">
+                                    <header class='gallery-icon'>
+                                        <a href="{{ site.baseurl }}/{{ page.active }}/{{ page.album }}/{{ image.path }}" class="popup"  title="{{ image.caption }}" data-caption="{{ image.copyright }}">
+                                            <img src="{{ site.baseurl }}/{{ page.active }}/{{ page.album }}/{{ image.path }}">
+                                        </a>
+                                    </header>
+                                    <figcaption class='gallery-caption'>
+                                        <div class="entry-summary" id="{{ image.caption }}">
+                                            <h2>{{ image.caption }}</h2>
+                                            <p>© Hower</p>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- jQuery -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <!-- bootstrap -->
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script src="{{ site.baseurl }}/js/jquery.magnific-popup.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function($){
+                $('a.popup').magnificPopup({
+                    type: 'image',
+                    gallery:{
+                        enabled:true,
+                        navigateByImgClick: true,
+                        preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+                    },
+                    image: {
+                        titleSrc: function(item) {
+                            return item.el.attr('title') + '&nbsp;' + item.el.attr('data-caption');
+                        }
+                    }
+                });
+            });
+        </script>
+
+        <!-- Masonry -->
+        <script src="{{ site.baseurl }}/js/isotope.pkgd.min.js"></script>
+        <!-- mousewheel plugins -->
+        <script src="{{ site.baseurl }}/js/jquery.mousewheel.min.js"></script>
+        <!-- carousel plugins -->
+        <script src="{{ site.baseurl}}/js/jquery.tinycarousel.min.js"></script>
+        <!-- svg line drawing plugin -->
+        <script src="{{ site.baseurl }}/js/jquery.lazylinepainter.min.js"></script>
+        <!-- custom script -->
+        <script src="{{ site.baseurl }}/js/scripts.js"></script>
+        <!-- Modernizr -->
+        <script src="{{ site.baseurl }}/js/modernizr.js"></script>
+        <!-- Custom Theme JavaScript -->
+        <script src="{{ site.baseurl }}/js/main.min.js"></script>
+        <!--{% include search.html %}-->
+        {% include footer.html %}
+        {% include scroll_to_top.html %}
+    </body>
+</html>

@@ -1,8 +1,8 @@
 ---
-layout: page
+layout: gallery
 active: gallery
 album: 201706@xinjiang
-head-img: 201706@xinjiang/head-img.jpg
+head-img: 201706@xinjiang/head.jpg
 title: 西北偏北 · 心降新疆
 description: 2017.06 @ 新疆
 album-title: 北疆行
@@ -92,66 +92,3 @@ images:
  - path: archive/41.jpg
    caption:
 ---
-
-<html class="no-js" lang="en">
-<body>
-	<section id="content" role="main">
-		<div class="wrapper">
-            <h2 style="margin:0 0 30px 20px;text-align:left;font-size:2.5rem">{{page.album-title}}</h2>
-            <div class="gallery masonry-gallery">
-                {% for image in page.images %}
-                    <figure class="gallery-item">
-                        <header class='gallery-icon'>
-                            <a href="{{ site.baseurl }}/{{ page.active }}/{{ page.album }}/{{ image.path }}" class="popup"  title="{{ image.caption }}" data-caption="{{ image.copyright }}">
-                                <img src="{{ site.baseurl }}/{{ page.active }}/{{ page.album }}/{{ image.path }}">
-                            </a>
-                        </header>
-                        <figcaption class='gallery-caption'>
-                            <div class="entry-summary" id="{{ image.caption }}">
-                                <h2>{{ image.caption }}</h2>
-                                <p>© Hower</p>
-                            </div>
-                        </figcaption>
-                    </figure>
-                {% endfor %}
-            </div>
-		</div>
-	</section>
-
-    <!-- jQuery -->
-    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <!-- include image popups -->
-    <script src="{{ site.baseurl }}/js/jquery.magnific-popup.js"></script>
-
-    <script type="text/javascript">
-        $(document).ready(function($){
-            $('a.popup').magnificPopup({
-                type: 'image',
-                gallery:{
-                    enabled:true,
-                    navigateByImgClick: true,
-                    preload: [0,1] // Will preload 0 - before current, and 1 after the current image
-                },
-                image: {
-                    titleSrc: function(item) {
-                        return item.el.attr('title') + '&nbsp;' + item.el.attr('data-caption');
-                    }
-                }
-            });
-        });
-    </script>
-
-    <!-- include Masonry -->
-    <script src="{{ site.baseurl }}/js/isotope.pkgd.min.js"></script>
-    <!-- include mousewheel plugins -->
-    <script src="{{ site.baseurl }}/js/jquery.mousewheel.min.js"></script>
-    <!-- include carousel plugins -->
-    <script src="{{ site.baseurl}}/js/jquery.tinycarousel.min.js"></script>
-    <!-- include svg line drawing plugin -->
-    <script src="{{ site.baseurl }}/js/jquery.lazylinepainter.min.js"></script>
-    <!-- include custom script -->
-    <script src="{{ site.baseurl }}/js/scripts.js"></script>
-    <!-- Modernizr -->
-    <script src="{{ site.baseurl }}/js/modernizr.js"></script>
-</body>
-</html>
