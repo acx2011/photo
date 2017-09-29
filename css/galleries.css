@@ -12,7 +12,7 @@
 .gallery-caption h3, .gallery-caption p { -webkit-transition: -webkit-transform 0.35s; transition: transform 0.35s; padding: 0; margin: 0; }
 .gallery-item:hover .gallery-caption h3, .gallery-item:hover .gallery-caption p { -webkit-transform: translate3d(0,0,0); transform: translate3d(0,0,0); }
 .gallery-caption h3  { font-weight: bold; text-transform: uppercase; font-size: .9em; letter-spacing: 0.05em; }
-.gallery-caption .entry-summary > p { font-family: Times, serif; font-style: italic; font-size: .8em; opacity: .8; }
+.gallery-caption .entry-summary > p { font-family: Times, serif; font-style: italic; opacity: .8; }
 
 #gallery-filter { display: block; position: relative; top: 12px; }
 #gallery-filter ul {  list-style: none; padding: 0; margin: 0 0 .3em 0; font-size: .8em; letter-spacing: 0.05em; }
@@ -50,7 +50,7 @@
 .masonry-gallery .gallery-caption .entry-summary { text-align: center; bottom: 0; padding: 1em; font-size: .8em; color: #F7F6F5; }
 .masonry-gallery .gallery-item.col-5 .gallery-caption { font-size: .85em; }
 .masonry-gallery .gallery-caption h3 { -webkit-transform: translate3d(0,-20px,0); transform: translate3d(0,-20px,0); margin-bottom: .5em; }
-.masonry-gallery .gallery-caption p { -webkit-transform: translate3d(0,20px,0); transform: translate3d(0,20px,0); padding-bottom: 1em; }
+.masonry-gallery .gallery-caption p { -webkit-transform: translate3d(0,20px,0); transform: translate3d(0,20px,0); /*padding-bottom: 1em;*/ }
 
 .fullscreen-gallery.gallery { height: 100vh !important; margin: 0; -webkit-transition: -webkit-transform 0.35s; transition: transform 0.35s; }
 .fullscreen-gallery .gallery-caption { position: absolute; bottom: 0; left: 0; z-index: 99; pointer-events: auto; }
@@ -132,8 +132,8 @@ img.mfp-img { padding: 0; }
 .mfp-container button.mfp-arrow-left::before, .mfp-container button.mfp-arrow-left::after { display: none; }
 
 
-     /*galleries adapted*/
-	.masonry-gallery .gallery-item { width: 30% !important; }
+ /*galleries adapted*/
+.masonry-gallery .gallery-item { width: 30% !important; }
 		
 @media screen and (max-height: 480px) {
 	/*header smaller space*/
@@ -148,4 +148,4 @@ img.mfp-img { padding: 0; }
 	/*galleries adapted*/
 	.fullscreen-gallery .gallery-caption .entry-summary { padding-bottom: 5em; }
 	.masonry-gallery .gallery-item { width: 100% !important; }
-	  
+}

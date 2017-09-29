@@ -8,7 +8,7 @@ figure.effect-selena {
 }
 
 figure.effect-selena img {
-     cursor: default;
+	cursor: default;
 	opacity: 1;
 	-webkit-transition: -webkit-transform 0.35s;
 	transition: transform 0.35s;
@@ -17,8 +17,8 @@ figure.effect-selena img {
 }
 
 figure.effect-selena:hover img {
-	-webkit-transform: scale3d(0.95,0.95,1);
-	transform: scale3d(0.95,0.95,1);
+	-webkit-transform: scale3d(0.95,0.93,1);
+	transform: scale3d(0.95,0.93,1);
 }
 
 figure.effect-selena h2 {
@@ -47,4 +47,8 @@ figure.effect-selena:hover p {
 	opacity: 1;
 	-webkit-transform: perspective(1000px) rotate3d(1,0,0,0);
 	transform: perspective(1000px) rotate3d(1,0,0,0);
+}
+
+@media screen and (max-width: 1366px) {
+	.gallery-caption .entry-summary {display: inline}
 }
