@@ -338,23 +338,16 @@ form .row:first-child .floating-label-form-group {
   border: 1px solid #0085a1;
   color: white;
 }
-.pager {
-  margin: 20px 0 0;
-}
-.pager li > a,
-.pager li > span {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
-  font-size: 14px;
+
+.pager li > a, .pager li > span {
+  font-size: 1.7rem;
   font-weight: 800;
   letter-spacing: 1px;
-  padding: 10px 5px;
+  padding: 10px 10px;
   background-color: black;
 }
 @media only screen and (min-width: 768px) {
-  .pager li > a,
-  .pager li > span {
-    font-size: 14px;
+  .pager li > a, .pager li > span {
     padding: 15px 25px;
   }
 }

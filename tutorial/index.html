@@ -1,0 +1,65 @@
+---
+layout: page
+active: tutorial
+title: 摄影教程
+description: 我从远方赶来，恰巧你们也在
+head-img: head.jpg
+---
+
+<head>
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/tutorial.css" media="screen"/>
+</head>
+
+<body class="journal">
+    <div class="archive">
+        <h1 class="archive-title" style="display:inline-block;"> POSTS </h1>
+        <div style="display:inline-block;margin-left:.5em;">Browse by <a href="{{ site.baseurl }}/journal/category/">Category</a> or <a href="{{ site.baseurl }}/journal/tag/">Tag</a></div>
+    </div>
+
+    <section class="section--postsWrapper">
+        <div class="container" style="padding-left:0!important;padding-right:0!important;">
+            <div class="blockGroup">
+                <ul class="blockGroup-list">
+                    {% for post in paginator.posts %}
+                        {% assign post = site.posts.first %}
+                        {% assign content = post.content %}
+                        <li class="block">
+                            <div class="postArticle-wrapper">
+                                <div class="post-preview">
+                                    <a href="{{ post.url | prepend: site.baseurl }}">
+                                        {% if post.image.feature %}
+	                                        <img src="{{ site.baseurl }}/img/postcover/{{ post.image.feature }}">
+	                                    {% endif %}
+                                        <p class="post-title" style="font-size:16px;"> &#9658; {{ post.title }}</p>
+                                    </a>
+                                    {% if post.subtitle %}
+                                        <p class="post-subtitle" style="font-size:12px;"> {{ post.subtitle }}</p>
+                                    {% endif %}
+                                    <p class="post-meta" style="font-size:10px;"> Posted on {{ post.date | date: "%B %-d, %Y" }}</p>
+                                </div>
+                            </div>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    {% if paginator.total_pages > 1 %}
+        <ul class="pager" style="padding:0 20px;">
+            {% if paginator.previous_page %}
+                <li class="previous">
+                    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">上一页</a>
+                </li>
+            {% endif %}
+            <span class="button-height" style="vertical-align:-webkit-baseline-middle">{{paginator.page}} / {{paginator.total_pages}}</span>
+            {% if paginator.next_page %}
+                <li class="next">
+                    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">下一页</a>
+                </li>
+            {% endif %}
+        </ul>
+    {% endif %}
+    <br/>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</body>

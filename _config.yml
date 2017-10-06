@@ -12,7 +12,7 @@ share: true
 # Internal nav
 nav:
   - GALLERY: "gallery"
-  - JOURNAL: "journal"
+  - TUTORIAL: "tutorial"
   - ABOUT: "about"
 
 # Owner/author information
@@ -43,10 +43,10 @@ markdown: kramdown
 highlighter: rouge
 permalink: pretty
 paginate: 5
-paginate_path: "/journal/page:num/"
-permalink: "/journal/:title/"
-categories_path: "/journal/category/"
-tags_path: "/journal/tag/"
+paginate_path: "/tutorial/page:num/"
+permalink: "/tutorial/:title/"
+categories_path: "/tutorial/category/"
+tags_path: "/tutorial/tag/"
 gems: 
  - jekyll-paginate
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]

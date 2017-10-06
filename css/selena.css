@@ -49,6 +49,6 @@ figure.effect-selena:hover p {
 	transform: perspective(1000px) rotate3d(1,0,0,0);
 }
 
-@media screen and (max-width: 1366px) {
+@media screen and (min-width: 360px) {
 	.gallery-caption .entry-summary {display: inline}
 }
