@@ -3,7 +3,7 @@ username: whatwhyhow7
 title: Hower Version
 description: 那些年 到过的远方，写过的诗，拍过的人们，还有故事
 url: https://whatwhyhow7.github.io
-#baseurl: /photo
+baseurl: /photo
 
 # User settings
 email: wangwenhao.rar@gmail.com
