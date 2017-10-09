@@ -9,23 +9,23 @@ date: "2016-02-01"
 header-img: "assets/img/postcover/pc007.jpg"
 comments: "true"
 gallery1: 
-  - image_path: /assets/img/galleries/g01/bg1.jpg
+  - image_path: /assets/img/postcover/pc007.jpg
     image-caption: IMAGE TITLE
     image-copyright: © photorama
-  - image_path: /assets/img/galleries/g01/bg2.jpg
+  - image_path: /assets/img/postcover/pc007.jpg
     image-caption: IMAGE TITLE
     image-copyright: © photorama
-  - image_path: /assets/img/galleries/g01/bg3.jpg
+  - image_path: /assets/img/postcover/pc007.jpg
     image-caption: IMAGE TITLE
     image-copyright: © photorama 
 gallery2: 
-  - image_path: /assets/img/galleries/g02/bg1.jpg
+  - image_path: /assets/img/postcover/pc007.jpg
     image-caption: IMAGE TITLE
     image-copyright: © photorama
-  - image_path: /assets/img/galleries/g02/bg2.jpg
+  - image_path: /assets/img/postcover/pc007.jpg
     image-caption: IMAGE TITLE
     image-copyright: © photorama
-  - image_path: /assets/img/galleries/g02/bg3.jpg
+  - image_path: /assets/img/postcover/pc007.jpg
     image-caption: IMAGE TITLE
     image-copyright: © photorama 
 ---
