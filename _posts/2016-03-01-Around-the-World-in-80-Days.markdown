@@ -6,7 +6,7 @@ active: tutorial
 image:
   feature: "pc006.jpg"
 date:       2016-03-01 
-header-img: "img/postcover/pc006.jpg"
+header-img: "assets/img/postcover/pc006.jpg"
 tags: [tag03]
 categories: [cat04]
 comments: false

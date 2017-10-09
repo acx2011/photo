@@ -7,7 +7,7 @@ head-img: head.jpg
 ---
 
 <head>
-    <link rel="stylesheet" href="{{ site.baseurl }}/css/tutorial.css" media="screen"/>
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/tutorial.css" media="screen"/>
 </head>
 
 <body class="journal">
@@ -23,7 +23,7 @@ head-img: head.jpg
                                 <div class="post-preview">
                                     <a href="{{ post.url | prepend: site.baseurl }}">
                                         {% if post.image.feature %}
-	                                        <img src="{{ site.baseurl }}/img/postcover/{{ post.image.feature }}">
+	                                        <img src="{{ site.baseurl }}/assets/img/postcover/{{ post.image.feature }}">
 	                                    {% endif %}
                                         <p class="post-title" style="font-size:16px;padding-left:20px;"> &#9658; {{ post.title }}</p>
                                     </a>
