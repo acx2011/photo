@@ -2,36 +2,15 @@
 username: whatwhyhow7
 title: Hower Vision
 description: 那些年 到过的远方，写过的诗，拍过的人们，还有故事
+email: wangwenhao.rar@gmail.com
 url: https://whatwhyhow7.github.io
 baseurl: /photo
-
-# User settings
-email: wangwenhao.rar@gmail.com
-share: true
 
 # Internal nav
 nav:
   - GALLERY: "gallery"
   - TUTORIAL: "tutorial"
   - ABOUT: "about"
-
-# Owner/author information
-owner:
-  name:   photorama
-  avatar: avatar.png
-  favicon: favicon.ico
-  info: photography website template
-
-# Settings for comments helper
-# Set 'provider' to the comment provider you want to use. (i.e.  Disqus, Intense Debate, livefyre, or Facebook Comments)
-# Set 'provider' to false to turn commenting off globally.
-#Set 'provider: false' to disable comments globally.
-# Disable comments for individual pages/posts by specifying 'comments: false' in the page/post YAML Front Matter.
-#
-comments:
-  provider: disqus
-  disqus:
-    short_name: ""
 
 # All translation keys
 translations:
@@ -45,9 +24,7 @@ permalink: pretty
 paginate: 5
 paginate_path: "/tutorial/page:num/"
 permalink: "/tutorial/:title/"
-categories_path: "/tutorial/category/"
-tags_path: "/tutorial/tag/"
-gems: 
+gems:
  - jekyll-paginate
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
 
