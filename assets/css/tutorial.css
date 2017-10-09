@@ -232,3 +232,10 @@
     padding-right: 15px;
     text-align: center;
 }
+
+@media (min-width: 768px) {
+    .tutorial .container {
+        padding-left:0px;
+        padding-right:10px;
+    }
+}
