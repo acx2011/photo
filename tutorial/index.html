@@ -51,7 +51,7 @@ head-img: head.jpg
                 {% if paginator.previous_page %}
                     <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">上一页</a>
                 {% else %}
-                    <a href="javascript:void(0);" class="btn disabled">上一页</a>
+                    <a href="javascript:void(0);" class="btn btn-default disabled">上一页</a>
                 {% endif %}
             </li>
             <span style="vertical-align:-webkit-baseline-middle">{{paginator.page}} / {{paginator.total_pages}}</span>
@@ -59,7 +59,7 @@ head-img: head.jpg
                 {% if paginator.next_page %}
                     <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">下一页</a>
                 {% else %}
-                <a href="javascript:void(0);" class="btn disabled">下一页</a>
+                    <a href="javascript:void(0);" class="btn btn-default disabled">下一页</a>
                 {% endif %}
             </li>
         </ul>
