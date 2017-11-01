@@ -5,6 +5,9 @@ title: 诗和远方
 description: 我从远方赶来，赴你一面之约
 head-img: head.jpg
 galleries:
+ - folder: 2012.07@Taian-Taishan
+   date: July 2012
+   name: 泰安 · 泰山
  - folder: 201208@Nanjing-TrainStation
    date: August 2012
    name: 南京 · 火车站
@@ -58,33 +61,33 @@ galleries:
 </head>
 
 <body class="gallery">
-    <section id="content" role="main">
-		<div class="wrapper">
-			<h2 style="margin:0 0 30px 20px;text-align:left;font-size:2.5rem">到过的地方</h2>
-			<div class="gallery masonry-gallery">
-                {% for gallery in page.galleries %}
-                    <figure class="gallery-item">
-                        <figure class="effect-selena">
-					        <header class='gallery-icon'>
-                                <a href="{{ site.baseurl }}/{{ page.active }}/{{ gallery.folder }}">
-                                    <img src="{{ site.baseurl }}/{{ page.active }}/{{ gallery.folder }}/cover.jpg" style="cursor:pointer;margin:-1px">
-                                </a>
-					        </header>
-					        <figcaption class="gallery-caption">
-                                <div class="entry-summary">
-                                    <h2 style="margin-bottom:20px;font-size:1.5em">{{ gallery.name }}</h2>
-                                    <p>{{ gallery.date }}</p>
-                                </div>
-					        </figcaption>
-                       </figure>
-				    </figure>
-                {% endfor %}
-			</div>
-		</div>
-	</section>
-    <br/>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="{{ site.baseurl }}/assets/js/isotope.pkgd.min.js"></script>
-    <script src="{{ site.baseurl }}/assets/js/scripts.js"></script>
+  <section id="content" role="main">
+    <div class="wrapper">
+      <h2 style="margin:0 0 30px 20px;text-align:left;font-size:2.5rem">到过的地方</h2>
+      <div class="gallery masonry-gallery">
+        {% for gallery in page.galleries %}
+        <figure class="gallery-item">
+          <figure class="effect-selena">
+            <header class='gallery-icon'>
+              <a href="{{ site.baseurl }}/{{ page.active }}/{{ gallery.folder }}">
+                <img src="{{ site.baseurl }}/{{ page.active }}/{{ gallery.folder }}/cover.jpg" style="cursor:pointer;margin:-1px">
+              </a>
+            </header>
+            <figcaption class="gallery-caption">
+              <div class="entry-summary">
+                <h2 style="margin-bottom:20px;font-size:1.5em">{{ gallery.name }}</h2>
+                <p>{{ gallery.date }}</p>
+              </div>
+            </figcaption>
+          </figure>
+        </figure>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+  <br/>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="{{ site.baseurl }}/assets/js/isotope.pkgd.min.js"></script>
+  <script src="{{ site.baseurl }}/assets/js/scripts.js"></script>
 </body>
 </html>
