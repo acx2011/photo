@@ -1,6 +1,6 @@
 # whatwhyhow7's photography 📸
 
-这是 [@whatwhyhow7](https://whatwhyhow7.github.io/photo) 的个人摄影小站 📸。
+这是 [@whatwhyhow7](https://whatwhyhow7.github.io/photo) 的个人摄影小站。
 
 ## 主要内容
 
