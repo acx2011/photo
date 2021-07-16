@@ -9,8 +9,8 @@ baseurl: /photo
 # Internal nav
 nav:
   - GALLERY: "gallery"
-  - TUTORIAL: "tutorial"
-  - ABOUT: "about"
+  # - TUTORIAL: "tutorial"
+  # - ABOUT: "about"
 
 # All translation keys
 translations:
